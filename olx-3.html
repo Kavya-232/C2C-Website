@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="olx.css">
+    <link rel="stylesheet" href="olx-2.css">
+    <script src="./olx.js"></script>
+
+    <script src="https://kit.fontawesome.com/3cfd25e2d8.js" crossorigin="anonymous"></script>
+
+    <title>search page</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home"> <img src="imageedit_2_3831937289.png" alt=""></a>
+
+        <nav class="navbar">
+
+            <a href="olx.html">home</a>
+            <a href="#features">features</a>
+            <a href="olx-3.html">products</a>
+            <a href="#reviews">reviews</a>
+        </nav>
+        <div class="icon">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="user-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="car.jpg" alt="">
+                <div class="content">
+                    <h3>car</h3>
+                    <span class="price">$14.99/-</span>
+                    <span class="qty"> qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="car.jpg" alt="">
+                <div class="content">
+                    <h3>car</h3>
+                    <span class="price">$14.99/-</span>
+                    <span class="qty"> qty: 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="car.jpg" alt="">
+                <div class="content">
+                    <h3>car</h3>
+                    <span class="price">$14.99/-</span>
+                    <span class="qty"> qty: 1</span>
+                </div>
+            </div>
+            <div class="total"> Total : $119.69/-</div>
+            <a href="#" class="btn"> checkout</a>
+        </div>
+        <div class="login-form">
+            <h3>Login now</h3>
+            <label for="email">Email :</label>
+            <input type="email" placeholder="your email" class="box">
+            <br>
+            <label for="password">password :</label>
+            <input type="password" placeholder="your password" class="box">
+            <p>forgot your password <a href="#">click here</a></p>
+            <p> don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </div>
+    </header>
+
+
+    <section class="products-2" id="products">
+        <div class="filter-section">
+            <div class="icon" onclick="openSort()">
+                <div class="fa-solid fa-bars-staggered" id="sort-btn"
+                onclick="myFunction()"></div>
+            </div>
+            <div class="sort-section" id="myDIV">
+                <div class="sort-by" id="sort-by">
+                    <h5>upload time</h5>
+                    <ul>
+                        <li>today</li>
+                        <li>this week</li>
+                        <li>this month</li>
+                        <li>this year</li>
+                    </ul>
+
+                    <hr>
+
+                    <h5>price</h5>
+                    <ul>
+                        <li>low to high</li>
+                        <li>medium</li>
+                        <li>high to low</li>
+                    </ul>
+
+                    <hr>
+                    
+                    <h5>cutomer's reviews</h5>
+                    <ul>
+                        <div class="star">
+                            
+                        <li> <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <br>
+                        
+                            <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                          <br>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <br>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="heading"> Your <span>results</span></h1>
+        <div class="swiper product-slider">
+           
+
+            <div class="swiper-slide box">
+                <img src="watch5.jpg" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch3.png" alt="">
+                <h3>
+                    5 new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch2.png" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch.png" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+
+
+        </div>
+        <div class="swiper product-slider">
+
+            <div class="swiper-slide box">
+                <img src="watch5.jpg" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch3.png" alt="">
+                <h3>
+                    5 new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch2.png" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch.png" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+
+
+        </div>
+
+        <div class="swiper product-slider">
+
+            <div class="swiper-slide box">
+                <img src="watch5.jpg" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch3.png" alt="">
+                <h3>
+                    5 new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch2.png" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+            <div class="swiper-slide box">
+                <img src="watch.png" alt="">
+                <h3>
+                    new model model
+                </h3>
+                <div class="price">
+                    $14.99/-
+                </div>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn"> add to cart</a>
+            </div>
+
+
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3> <img src="imageedit_2_3831937289.png" alt=""></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nisi</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+
+                </div>
+            </div>
+            <div class="box">
+                <h3>Contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +239-447-4888</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> +424-867-4844</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> sharikhanas@gmail.com</a>
+                <a href="#" class="links"> <i class="fa-solid fa-location-dot"></i> mumbai,india - 400104</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> reviews</a>
+            </div>
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest update</p>
+                <input type="text" placeholder="your name" class="email">
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="olx-3.js"></script>
+        </body>
+
+</html>
